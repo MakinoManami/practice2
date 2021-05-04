@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=dwvice,initial-scale=1.0">
+        <title>humburgermenu1</title> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+        <style type="text/css">
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            overflow: hidden;
+        }
+        #main{
+            background-color: #eee;
+            width: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 8px;
+            z-index: 2;
+            overflow: auto;
+            box-sizing: border-box;
+            
+         }
+        #menu{
+            background-color: rgb(53, 91, 141);
+            color: fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 8px;
+            width: 180px;
+            min-height: 100%;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+        #open{
+            float: right;
+            cursor: pointer;
+        }
+        #main.menu-open{
+            left:-180px;
+        }
+            </style>
+    </head>
+    <body>
+        <div id="menu">
+            <ul>
+                <li>Munu1</li>
+                <li>Munu2</li>
+                <li>Munu3</li>
+                <li>Munu4</li>
+                <li>Munu5</li>
+            </ul>
+        </div>
+        <div id="main">
+            <i class="fas fa-bars" id="open"></i>
+            <h1>Hello</h1>
+            <p>Hello!Hello!Hello!Hello!Hello!Hello!Hello!</p>
+            <p>Hello!Hello!Hello!Hello!Hello!Hello!Hello!</p>
+            <p>Hello!Hello!Hello!Hello!Hello!Hello!Hello!</p>
+            <p>Hello!Hello!Hello!Hello!Hello!Hello!Hello!</p>
+            <p>Hello!Hello!Hello!Hello!Hello!Hello!Hello!</p>
+            <p>Hello!Hello!Hello!Hello!Hello!Hello!Hello!</p>
+            <p>Hello!Hello!Hello!Hello!Hello!Hello!Hello!</p>
+            <p>Hello!Hello!Hello!Hello!Hello!Hello!Hello!</p>
+            <p>Hello!Hello!Hello!Hello!Hello!Hello!Hello!</p>
+            <p>Hello!Hello!Hello!Hello!Hello!Hello!Hello!</p>
+        </div>    
+        <script>
+            'use strict'
+
+            const open=document.getElementById('open');
+            const main=document.getElementById('main');
+
+            open.addEventListener('click',() =>{
+                if(main.className==='menu-open'){
+                    main.className='';
+                }
+                else{
+                    main.className='menu-open';
+                }
+            });
+        </script>
+    </body>
+</html>
